@@ -149,7 +149,7 @@
     <header
         android:id="@+id/about"
         android:fragment="com.aokp.romcontrol.fragments.About"
-        android:title="@string/about_xehd"
+        android:title="@string/about_pbox"
         android:icon="@drawable/ic_rom_settings_about"
-        android:summary="@string/about_xehd_summary" />
+        android:summary="@string/about_pbox_summary" />
 </preference-headers>

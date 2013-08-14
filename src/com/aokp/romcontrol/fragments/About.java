@@ -46,19 +46,4 @@ public class About extends AOKPPreferenceFragment {
         }
     }
 
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mSiteUrl) {
-            launchUrl("http://xenonhd.com");
-        } else if (preference == mSourceUrl) {
-            launchUrl("http://github.com/teamhorizon");
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
-    private void launchUrl(String url) {
-        Uri uriUrl = Uri.parse(url);
-        Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
-        getActivity().startActivity(donate);
-    }
 }
